@@ -1,0 +1,5 @@
+%menu {
+	@include text($fontFamily, 18px, $color-main);
+	line-height: calc(21 / 18);
+	text-transform: uppercase;
+}

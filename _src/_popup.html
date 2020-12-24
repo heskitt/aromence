@@ -1,0 +1,46 @@
+<div class="popup popup--search">
+	<div class="popup__content">
+		<div class="popup__body search">
+			<form class="search__form" action="#">
+				<input class="input input--search" autocomplete="off" type="text" name="form[]" data-value="Search...">
+				<button class="search__btn" type="submit">
+					<svg>
+						<use xlink:href="img/sprite.svg#svg-search"></use>
+					</svg>
+				</button>
+			</form>
+			<div class="popup__close">
+				<svg>
+					<use xlink:href="img/sprite.svg#svg-close"></use>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--login">
+	<div class="popup__content">
+		<div class="popup__body login">
+			<div class="login__title big-title">LOG IN</div>
+			<form class="login__form form" action="#">
+				<div class="form__line">
+					<input class="input _req _email" autocomplete="off" type="text" name="form[]" data-value="Your e-mail" data-error="Invalid e-mail address">
+				</div>
+				<div class="form__line">
+					<input class="input" autocomplete="off" type="password" name="form[]" data-value="Password">
+				</div>
+				<a class="form__link" href="#">Forgot password?</a>
+				<button class="form__btn btn btn--login" type="submit"><span>Sign in</span></button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close--video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
