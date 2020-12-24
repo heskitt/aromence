@@ -28,6 +28,46 @@
 		color: $color-alt;
 	}
 }
+
+.control {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	// .control__arrow
+	&__arrow {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		background: $color-alt;
+		border-radius: 50%;
+		box-shadow: 0 4px 4px rgba(176, 176, 176, .25);
+		cursor: pointer;
+		@media (max-width: $md2+px) {
+			width: 28px;
+			height: 28px;
+		}
+		svg {
+			width: 13px;
+			height: 7px;
+			fill: $color-accent;
+		}
+		// .control__arrow--prev
+		&--prev {
+			svg {
+				transform: rotate(-180deg);
+			}
+		}
+		// .control__arrow--next
+		&--next {
+		}
+	}
+	// .control__dotts
+	&__dotts {
+	}
+}
 //</ОСНОВНОЙ БЛОК>=============================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>=============================================================================================================
@@ -213,7 +253,6 @@ ol.counter {
 }
 //=============================================================================================================================
 ._swiper {
-	overflow: hidden;
 	//.swiper-wrapper
 	.swiper-wrapper {
 		position: relative;

@@ -101,6 +101,9 @@ const enableSwiper = function () {
 				1232: {
 					spaceBetween: 280,
 				},
+				1440: {
+					spaceBetween: 360,
+				}
 			},
 		})
 	}
@@ -115,6 +118,7 @@ if (document.querySelector('.reviews-slider')) {
 		observer: true,
 		observeParents: true,
 		slidesPerView: 1,
+		spaceBetween: 60,
 		watchOverflow: true,
 		speed: 800,
 		loop: true,
